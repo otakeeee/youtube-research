@@ -1,0 +1,27 @@
+{
+  "projectContext": "YouTube自動リサーチ・分析・台本生成システム",
+  "workingDirectory": "/Users/matsumototoshihiko/Desktop/dev/YOUTUBEmaiシステム",
+  "preferredStyle": {
+    "typescript": "strict",
+    "commitMessage": "conventional",
+    "testing": "vitest"
+  },
+  "hooks": {
+    "userPromptSubmit": ".claude/hooks/log-commands.sh"
+  },
+  "agents": {
+    "enabled": true,
+    "defaultConcurrency": 3
+  },
+  "worktree": {
+    "sessionName": "youtube_auto",
+    "baseBranch": "main",
+    "defaultCount": 3
+  },
+  "environment": {
+    "YOUTUBE_API_KEY": "your-youtube-api-key-here",
+    "CLAUDE_API_KEY": "your-claude-api-key-here",
+    "WHISPER_API_KEY": "your-whisper-api-key-here",
+    "GITHUB_TOKEN": "your-github-token-here"
+  }
+}

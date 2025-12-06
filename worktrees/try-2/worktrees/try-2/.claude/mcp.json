@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "ide-integration": {
+      "command": "node",
+      "args": [
+        ".claude/mcp-servers/ide-integration.js"
+      ],
+      "disabled": false,
+      "description": "VS Code diagnostics and Jupyter execution integration"
+    },
+    "github-enhanced": {
+      "command": "node",
+      "args": [
+        ".claude/mcp-servers/github-enhanced.js"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}",
+        "REPOSITORY": "${REPOSITORY}"
+      },
+      "disabled": false,
+      "description": "Enhanced GitHub operations for Issue/PR management"
+    },
+    "project-context": {
+      "command": "node",
+      "args": [
+        ".claude/mcp-servers/project-context.js"
+      ],
+      "disabled": false,
+      "description": "Project-specific context and dependency information"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "."
+      ],
+      "disabled": false,
+      "description": "Filesystem access for project files"
+    },
+    "youtube-automation": {
+      "command": "node",
+      "args": [
+        ".claude/mcp-servers/youtube-automation.js"
+      ],
+      "env": {
+        "YOUTUBE_API_KEY": "${YOUTUBE_API_KEY}",
+        "CLAUDE_API_KEY": "${CLAUDE_API_KEY}",
+        "WHISPER_API_KEY": "${WHISPER_API_KEY}"
+      },
+      "disabled": false,
+      "description": "YouTube自動リサーチ・分析・台本生成システム統合"
+    }
+  }
+}

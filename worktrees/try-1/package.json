@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ait42": "git+https://github.com/yuco944/AIT42.git"
+  }
+}
